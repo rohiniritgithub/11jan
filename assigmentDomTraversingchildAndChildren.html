@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dom traversing </title>
+	child And Children
+</head>
+<body>
+	<div id="myid">hello div
+		<h1>we are learing Javascript</h1>
+		<!--This is comment-->
+		<h1> I am h1</h1>
+		<b>hii rohini</b>
+	</div>
+	<script type="text/javascript">
+		var res=document.getElementById("myid");
+		console.log(res.childNodes);   //tree of div tag
+		console.log(res.children);     //children of tag div
+		console.log(res.childNodes[2]);  //directly find childnode
+		console.log(res.children[1]);     //directly print children of div
+
+
+		var res1=res.childNodes.length;
+		var res2=res.children.length;
+		console.log(res1);
+		document.write(res1+"<br>");  //length of childenode
+		document.write(res2+"<br>");  //length of children 
+
+		//using loop
+		for(let i=0;i<=res1;i++)
+		{
+			console.log(res.childNodes[i]);
+			console.log(res.children[i]);
+		}
+
+
+
+	</script>
+
+</body>
+</html>
