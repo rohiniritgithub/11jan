@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tree</title>
+</head>
+<body>
+	<h1 id="myid">
+		<!---This is comment-->
+		<span>We are Learning Js</span>
+	</h1>
+	<p id="myid1">I am ParaGraph</p>
+	<p id="myid2"><span>I am An Element</span>
+
+
+
+		<script type="text/javascript">
+			var result=document.getElementById("myid");
+			console.log(result.childNodes[0]);
+			console.log(result.children[0]);
+
+
+			var cnlen=result.childNodes.length;
+			console.log(cnlen);
+			var clen=result.children.length;
+			console.log(clen);
+
+			//for loop for childNode
+			for(let i=0;i<cnlen;i++)
+			{
+				console.log(result.childNodes[i]);
+			}
+
+			//for loop for children
+			for(let i=0;i<clen;i++)
+			{
+				console.log(result.children[i]);
+			}
+
+		</script>
+
+</body>
+</html>
